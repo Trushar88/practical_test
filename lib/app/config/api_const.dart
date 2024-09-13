@@ -1,7 +1,15 @@
 // ignore_for_file: constant_identifier_names
 
 class APICONST {
-  static const String BASE_URL = "https://jsonplaceholder.typicode.com/";
+  static const BASE_URL = "https://dummyjson.com/";
 
-  static const String post = "posts";
+  // receiveTimeout
+  static const int receiveTimeout = 180000;
+
+  // connectTimeout
+  static const int connectionTimeout = 180000;
+
+  //endpoints
+
+  static const String product = "products";
 }

@@ -2,7 +2,7 @@
 
 import 'dart:developer';
 import 'package:dio/dio.dart';
-import 'package:practicaltest/app/config/api_const.dart';
+import 'package:practical_test/app/config/api_const.dart';
 
 import '../model/response_model.dart';
 import '../app/config/app_strings.dart';
@@ -16,10 +16,8 @@ class BaseRepository {
       receiveTimeout: const Duration(seconds: 5), // set receiveTimeout time
       headers: {
         "Access-Control-Allow-Origin": "*", // Required for CORS support to work
-        "Access-Control-Allow-Credentials":
-            true, // Required for cookies, authorization headers with HTTPS
-        "Access-Control-Allow-Headers":
-            "Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,locale",
+        "Access-Control-Allow-Credentials": true, // Required for cookies, authorization headers with HTTPS
+        "Access-Control-Allow-Headers": "Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,locale",
         "Access-Control-Allow-Methods": "GET,POST, OPTIONS"
       },
     ));
@@ -44,8 +42,7 @@ class BaseRepository {
   dynamic getAPIResult<T>(final response, T recordList) {
     try {
       dynamic result;
-      result = APIResult.fromJson(response,
-          recordList); // decode API response and bind it to our result class
+      result = APIResult.fromJson(response, recordList); // decode API response and bind it to our result class
       return result;
     } catch (e) {
       log("Exception - getAPIResult():$e");
@@ -67,11 +64,6 @@ class BaseRepository {
       return handler.next(e); //continue
     }));
 
-    _dio!.interceptors.add(LogInterceptor(
-        request: true,
-        requestHeader: true,
-        requestBody: true,
-        responseBody: true,
-        error: true));
+    _dio!.interceptors.add(LogInterceptor(request: true, requestHeader: true, requestBody: true, responseBody: true, error: true));
   }
 }

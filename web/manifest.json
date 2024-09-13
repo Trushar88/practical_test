@@ -1,6 +1,6 @@
 {
-    "name": "practicaltest",
-    "short_name": "practicaltest",
+    "name": "practical_test",
+    "short_name": "practical_test",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -1,10 +1,10 @@
 // ignore_for_file: non_constant_identifier_names
 
 import 'package:flutter/material.dart';
-import 'package:practicaltest/app/extensions/color.dart';
+import 'package:practical_test/app/extensions/color.dart';
 
 class APPCOLOR {
-  static Color PRIMARYCOLOR = HexColor("D62B71");
+  static Color PRIMARYCOLOR = HexColor("E77825");
   static Color GREYCOLOR = HexColor("B8B8BA");
   static Color LIGHTGREY = HexColor("E6E6E7");
   static Color LIGHTGREYBG = HexColor("F1F1F1");

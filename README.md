@@ -1,22 +1,16 @@
-# practicaltest
+# practical_test
 
-Practical Test
+A new Flutter project.
 
+## Getting Started
 
-## structure
+This project is a starting point for a Flutter application.
 
-I have followed MVC structure in this demo using getx
+A few resources to get you started if this is your first Flutter project:
 
-## Package Used
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-get : I have use getx for state-management and for small project I prefered getx hence, I used getx in this demo as implement and learn getx is easy  
-
-loader_overlay : loader_overlay package I Used for show loader and hide 
-
-visibility_detector : visibility_detector I have used this package for detect current item visible on screen or not
-
-dio :  I have used dio for networking. because it's provide some more functionality compare to HTTP
-
-connectivity_plus : I have used connectivity_plus for checking internet
-
-shared_preferences :  I have used this package for store and fetch data in local stoarge
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

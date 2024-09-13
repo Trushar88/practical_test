@@ -1,7 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:practicaltest/app/config/app_colors.dart';
+import 'package:practical_test/app/config/app_colors.dart';
 
 class Themes {
   //light theme
